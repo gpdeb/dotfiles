@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- shell:
+  - ["sh -c \"$(curl -fsSL https://raw.githubusercontent.com/\
+     robbyrussell/oh-my-zsh/master/tools/install.sh)\"", Installing oh-my-zsh]
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
