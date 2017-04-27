@@ -1,7 +1,7 @@
 PROMPT='$SSH_INFO%n@%m %{$fg[blue]%}%~/%{$reset_color%} $(git_prompt_info)$ '
 
 if [ -n "$SSH_CLIENT" ]; then
-    SSH_INFO="%{$fg[red]%}[SSH]%{$reset_color%} "
+    SSH_INFO="%{$fg[red]%}SSH%{$reset_color%} "
 else
     SSH_INFO=""
 fi
