@@ -28,15 +28,17 @@ set showmatch
 set laststatus=2
 
 " Format status line
+" %n = Buffer number
 " %F%m%r%h = Full path, modified flag, read-only flag, help flag
-" %y = File type
 " %w = Preview flag
 " %= = Right align
+" %{&ff} = Line endings
+" %y = File type
 " %-4l = Current line, padded to 4 characters
 " %-4L = Total lines, padded to 4 characters
 " %-3c = Current column, padded to 3 characters
 " %P = Position in file
-set statusline=\ %F%m%r%h\ %y\ %w\ \ CWD:\ %{getcwd()}\ %=Line:\ %-4l\/%-4L\ \ Col:\ %-3c\ \ %P
+set statusline=\ [%n]\ \ %F%m%r%h\ %w\ \ CWD:\ %{getcwd()}\ %=%{&ff}\ %y\ \ Line:\ %-4l\/%-4L\ \ Col:\ %-3c\ \ %P\ 
 
 " Highlight the 81st character on a line
 highlight ColorColumn ctermbg=darkred
