@@ -34,11 +34,11 @@ set laststatus=2
 " %= = Right align
 " %{&ff} = Line endings
 " %y = File type
-" %-4l = Current line, padded to 4 characters
-" %-4L = Total lines, padded to 4 characters
+" %5l = Current lines, padded to 5 characters
 " %-3c = Current column, padded to 3 characters
+" %-5L = Total lines, padded to 5 characters
 " %P = Position in file
-set statusline=\ [%n]\ \ %F%m%r%h\ %w\ \ CWD:\ %{getcwd()}\ %=%{&ff}\ %y\ \ Line:\ %-4l\/%-4L\ \ Col:\ %-3c\ \ %P\ 
+set statusline=\ [%n]\ \ %F%m%r%h\ %w\ \ CWD:\ %{getcwd()}\ %=%{&ff}\ %y\ \ %5l,%-3c\ \ Lines:\ %-5L\ \ %P\ 
 
 " Highlight the 81st character on a line
 highlight ColorColumn ctermbg=darkred
