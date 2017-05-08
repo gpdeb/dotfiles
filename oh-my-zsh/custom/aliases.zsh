@@ -1,0 +1,6 @@
+alias l='ls -plah'
+alias l.='ls -pd .* --color=auto'
+alias la='ls -plAh'
+alias ll='ls -plh'
+alias ls='ls -p --color=tty'
+alias lsa='ls -plah'
